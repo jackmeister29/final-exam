@@ -1,9 +1,14 @@
+* {
+  box-sizing: border-box; /*CSS hack #3 "border box hack"*/
+}
+
 .container {
   max-width: 700px;
   margin: 0 auto;
   background-color: white;
   padding: 20px;
   overflow: auto;
+  box-sizing: border-box;
 }
 @media(min-width: 650px) {
   .column1 {
@@ -18,14 +23,41 @@
   }
 }
 
-.pic1 {
-  max-width: 700px;
+.pic1.line {
+  max-width: 650px;
+  border-top: 5px solid #E8E8E8;
+  padding-top: 35px;
 }
 
 .pic2 {
-  max-width: 700px;
+  max-width: 650px;
 }
 
 body {
   background-color: gray;
+}
+
+h3 {
+  font-weight: normal;
+  padding-bottom: 2px;
+  font-family: georgia;
+}
+
+h2 {
+  font-size: 24px;
+  font-style: italic;
+  margin-top: 0px;
+  font-family: georgia;
+}
+
+h1 {
+  font-family: georgia;
+}
+
+.link {
+  color: #9932CC;
+}
+
+.space {
+  border-bottom: 20px;
 }
